@@ -1,0 +1,207 @@
+*{
+    text-align: center;    
+}
+
+body{
+   background-color: #17202A;
+   font-family: 'Lato', sans-serif;
+   font-size: 23px;
+   color: white;
+   margin: 0;
+}
+
+header{
+    font-family: 'Exo 2', sans-serif;
+    font-size:60px;
+    color: #AF7AC5;
+    margin: 50px;
+    
+}
+
+
+nav{
+    margin-bottom: 20px;
+}
+
+.links{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #333;
+}
+
+.links a{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.links a:hover {
+    background-color: #111;
+}
+
+
+h1{
+    color: #42234F;
+    background: #AF7AC5 ;
+    border-radius:20px 20px 0px 0px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0px;
+
+}
+
+article{
+    overflow: hidden;
+    margin: 50px;
+
+}
+
+#imagem{
+    width: 60%;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+#artigos{
+    display:flex;
+    font-size: 20px;
+}
+
+#artigo1{
+width: 80%;
+font-size: 20px;
+}
+
+#artigo2{
+    font-size: 20px;
+}
+
+#artigo3{
+    font-size: 20px;
+}
+
+p{
+    background-color:#42234F;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius:0px 0px 20px 20px;
+}
+
+#definitionJS{
+    color: yellow;
+}
+
+
+#principal{
+    border-radius:20px 20px 20px 20px;
+    margin: 2rem;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+#pf{
+    background-color: #111;
+    border-radius:0px 0px 0px 0px;
+    margin-bottom: 0;
+}
+
+/*CSS DAS PAGINAS SOBRE HTML*/
+#tituloPG {
+    border-radius: 20px 20px 20px 20px;
+    margin: 2rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#imagemJS {
+
+    border-radius: 50%;
+}
+
+
+.codigo {
+    font-weight: 200;
+    text-align: left;
+    border-left: 6px solid #000;
+    font-size: 1.2rem;
+    margin: 24px 0 24px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 24px;
+    width: 90%;
+    background-color: rgba(53, 52, 52, 0.856);
+
+}
+
+#artigosJS {
+    font-size: 20px;
+
+}
+
+.conteudoJS {
+
+    text-align: left;
+    background-color: #42234F;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.tags {
+    color: yellow;
+}
+
+.tags2 {
+    color: dodgerblue;
+}
+
+.tags3 {
+    color: yellow;
+}
+
+ol li {
+    text-align: left;
+    font-size: 17px;
+}
+
+#next {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: right;
+    margin-top: 25px;
+}
+
+#anterior {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    margin-top: 25px;
+}
+
+#anterior:hover {
+    color: #AF7AC5;
+}
+
+#next:hover {
+    color: #AF7AC5;
+}
+
+ul li {
+    text-align: left;
+    font-size: 17px;
+    padding-top: 10px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>CSS3</title>
+</head>
+<body>
+    
+    <header>ERROR 404</header>
+    
+    <nav>
+        <div class="links">
+            <a href="index.html"><span class="material-icons">home</span> Home</a>
+            <a href="html.html"><span class="material-icons">code</span> Html5</a>
+            <a href="css.html"> <span class="material-icons">code </span> Css3</a>
+            <a href="javascript.html"><span class="material-icons">code</span> JavaScript</a>
+        </div>
+    </nav>
+
+    <!--Abas ou Tabs-->
+	<div align="center" class="tab">
+  		<button class="tablinks active" onclick="openTab(event, 'Introducao')">Introdução</button>
+  		<button class="tablinks" onclick="openTab(event, 'Sintaxe')">Sintaxe</button>
+  		<button class="tablinks" onclick="openTab(event, 'Seletores')">Seletores</button>
+	</div>
+
+	<main>
+		<!--Aba 1 ou Tab 1-->
+		<div id="Introducao" class="tabcontent">
+
+  			<p class="title">
+  				<font size="7">Introdução</font><br>
+  				CSS é a linguagem que usamos para definir o estilo de uma página da web.
+  			</p><br>
+
+  			<div align="center">
+  				<img src="Imagens/logo.png" class="img1" alt="Logo do CSS 3">
+  			</div><br>
+
+  			<!--Grade-->
+  			<div class="grid">
+
+  				<!--Item superior esquerdo-->
+  				<div class="item1">
+  					<h4 class="textTitle">O que é CSS?</h4>
+  					<div class="text">
+  						<ul>
+  							<li>CSS significa Cascading Style Sheets</li>
+  							<li>CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outra mídia</li>
+  							<li>CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez</li>
+  							<li>Folhas de estilo externas são armazenadas em arquivos CSS</li>
+  						</ul>
+  					</div>
+  				</div>
+
+  				<!--Item inferior esquerdo-->
+  				<article>
+  					<div class="item2">
+  						<h4 class="noteTitle">Por que usar CSS?</h4>
+						<p class="note">
+							CSS é usado para definir estilos nas suas páginas da web, incluindo o design, layout e variações de exibição para diferentes dispositivos e tamanhos de tela.
+						</p>
+					</div>
+				</article>
+
+				<!--Item direito-->
+				<div class="item3">
+					<h4 class="textTitle">CSS resolveu um grande problema</h4>
+					<div class="text">
+						O HTML NUNCA teve a intenção de conter tags para formatar uma página da web!<br>
+						O HTML foi criado para descrever o conteúdo de uma página da web, como:
+						<div class="codigo">
+							<span class="tags">&#60h1&#62</span> Este é um título <span class="tags">&#60/h1&#62</span>
+							<br>	
+							<span class="tags">&#60p&#62</span> Este é um parágrafo. <span class="tags">&#60/p&#62</span>
+						</div>
+						Quando tags como <span class="tags">&#60font&#62</span> e atributos de cor foram adicionados à especificação HTML 3.2, isso deu início a um pesadelo para os desenvolvedores da web. O desenvolvimento de grandes sites, onde fontes e informações de cores eram adicionadas a cada página, tornou-se um processo longo e caro.<br>
+
+						Para resolver esse problema, o World Wide Web Consortium (W3C) criou o CSS.<br>
+
+						CSS removeu a formatação de estilo da página HTML!
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Aba 2 ou Tab 2-->
+		<div id="Sintaxe" class="tabcontent">
+			<p class="title">
+  				<font size="7">Sintaxe</font><br>
+  				Uma sintaxe CSS consiste em um seletor e um bloco de declaração.
+  			</p><br>
+
+  			<div align="center">
+  				<img src="Imagens/sintaxe.png" alt="Sintaxe do CSS">
+  			</div><br>
+
+  			<!--Grade-->
+  			<div class="grid">
+
+  				<!--Item esquerdo-->
+  				<div class="item4">
+  					<div class="tex">
+  						<ul>
+  							<li>O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+  							<li>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+  							<li>Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</li>
+  							<li>Os blocos de declaração são sempre cercados por chaves.</li>
+  						</ul>
+  					</div>
+  				</div>
+
+  				<!--Item direito-->
+  				<div class="item5">
+  					<h4 class="textTitle">Exemplo</h4>
+  					<div class="text">
+  						<div class="codigo">
+  							<span class="tags"> p </span>{ 
+  								<span class="propriedade">color</span>: <span class="value">red</span>; 
+  								<span class="propriedade">text-align</span>: <span class="value">center</span>;
+							}
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<!--Aba 3 ou Tab 3-->
+		<div id="Seletores" class="tabcontent">
+
+  			<p class="title">
+  				<font size="7">Seletores</font><br>
+  				Um seletor CSS seleciona o(s) elemento(s) HTML que você deseja estilizar.
+  			</p><br>
+
+  			<div class="tex">
+  				Os seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja estilizar.<br>
+  				Podemos dividir os seletores CSS em cinco categorias:
+  				<ul>
+  					<li>Seletores simples (selecione os elementos com base no nome, id, classe)</li>
+  					<li>Seletores combinadores (selecione os elementos com base em uma relação específica entre eles)</li>
+  					<li>Seletores de pseudoclasse (selecione os elementos com base em um determinado estado)</li>
+  					<li>Seletores de pseudoelementos (selecione e estilize uma parte de um elemento)</li>
+  					<li>Seletores de atributo (selecione os elementos com base em um atributo ou valor de atributo)</li>
+  				</ul><br>
+  				Esta página explicará os seletores CSS mais básicos.
+  			</div><br>
+
+  			<!--Grade-->
+  			<div class="grid">
+
+  				<!--Item superior esquerdo-->
+  				<div class="ex1">
+  					<h4 class="textTitle">Seletor de Elementos</h4>
+  					<div class="text">
+  						O seletor de elemento seleciona elementos HTML com base no nome do elemento.<br>
+  						<div class="codigo">
+  							<span class="tags"> p </span>{<br> 
+  								<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br> 
+  								<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>
+							}
+  						</div>
+  					</div>
+  				</div>
+
+  				<!--Item superior direito-->
+  				<div class="ex2">
+  					<h4 class="textTitle">Seletor de Id</h4>
+  					<div class="text">
+  						O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico.<br>
+  						<div class="codigo">
+  							<span class="tags"> #para1 </span>{ <br>
+  								<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br> 
+  								<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>
+							}
+  						</div>
+  					</div>
+  				</div>
+
+  				<!--Item do meio-->
+  				<div class="ex3">
+
+  					<h4 class="textTitle">Seletor de Classes</h4>
+  					<div class="text">
+  						O seletor de classe seleciona elementos HTML com um atributo de classe específico.
+
+  						<!--Grade-->
+  						<div class="grid">
+
+  							<!--Item esquerdo-->
+  							<div class="ex6">
+  								Para selecionar elementos com uma classe específica, escreva um ponto (.), Seguido do nome da classe.<br>
+  								<div class="codigo">
+  									<span class="tags"> .center </span>{ <br>
+  									<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br> 
+  									<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>}
+  								</div>
+  							</div>
+
+  							<!--Item direito-->
+  							<div class="ex7">
+  								Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe.<br>
+  								<div class="codigo">
+  									<span class="tags"> p.center </span>{ <br>
+  									<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br> 
+  									<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>}
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+
+  				<!--Item inferior esquerdo-->
+  				<div class="ex4">
+  					<h4 class="textTitle">Seletor universal</h4>
+  					<div class="text">
+  						O seletor universal (*) seleciona todos os elementos HTML na página.<br>
+  						<div class="codigo">
+  							<span class="tags"> * </span>{<br> 
+  								<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br>
+  								<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>
+							}
+  						</div>
+  					</div>
+  				</div>
+
+  				<!--Item inferior direito-->
+  				<div class="ex5">
+  					<h4 class="textTitle">Seletor de Agrupamento</h4>
+  					<div class="text">
+  						O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo.<br>
+  						<div class="codigo">
+  							<span class="tags"> h1,h2,p </span>{<br>
+  								<span class="propriedade">&nbsp;&nbsp;color</span>: <span class="value">red</span>;<br> 
+  								<span class="propriedade">&nbsp;&nbsp;text-align</span>: <span class="value">center</span>;<br>
+							}
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+	</main>
+
+	<footer>
+        <div>
+            <p id="pf">
+                Atendimento ao cliente
+                <br>
+                <strong><span class="material-icons"> email</span> E-mail:</strong>  atendimento@error404.com 
+                <br>
+                <strong><span class="material-icons">phone</span>Telefone/WhatsApp:</strong>  (11) 94807-4260 
+                <br>
+                 De segunda a domingo <br>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+<script type="text/javascript">
+	//Funcionamento das abas
+	$(document).ready(function(){
+		document.getElementById('Introducao').style.display = "block";
+  		evt.currentTarget.className += " active";
+	})
+	function openTab(evt, tabName) {
+  		// Declaração de Variaveis
+  		var i, tabcontent, tablinks;
+
+  		// Pega os elementos com class="tabcontent" e os esconde
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+    		tabcontent[i].style.display = "none";
+  		}
+
+  		// Pega os elementos com class="tablinks" e remove a class "active"
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+    		tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+
+  		// Mostra a tab ativa, e adiciona um "active" na class do botão da tab
+  		document.getElementById(tabName).style.display = "block";
+  		evt.currentTarget.className += " active";
+	}
+</script>
+
+</html>

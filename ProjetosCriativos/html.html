@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <title>HTML5</title>
+      
+</head>
+
+<body>
+
+    <header>ERROR 404</header>
+
+    <nav>
+        <div class="links">
+            <a href="index.html"><span class="material-icons">home</span> Home</a>
+            <a href="html.html"><span class="material-icons">code</span> Html5</a>
+            <a href="css.html"> <span class="material-icons">code </span> Css3</a>
+            <a href="javascript.html"><span class="material-icons">code</span> JavaScript</a>
+        </div>
+    </nav>
+    <div>
+        <p id="tituloPG">Introdução ao HTML5 </p>
+        <img id="imagemHtml1" src="Imagens/html1.jpg" alt="imagem">
+    </div>
+    <div id="artigosHtml">
+        <article>
+            <h1>O que é HTML?</h1>
+
+            <div class="conteudoHTML">
+                HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do
+                seu conteúdo. HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar
+                diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira. As tags anexas
+                podem transformar uma palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar
+                ou diminuir a fonte e assim por diante. Por exemplo, veja a seguinte linha de conteúdo:
+
+                <div class="codigo">Meu gatinho é muito mal humorado</div>
+                Se quiséssemos que a linha permanecesse por si só, poderíamos especificar que é um parágrafo colocando-a
+                em uma tag de parágrafo:
+                <div class="codigo">
+                    <span class="tags">
+                        <</span><span class="tags">p</span><span class="tags">></span>Meu gatinho é muito mal humorado<span class="tags"><</span><span class="tags">/p</span><span class="tags">></span>
+                </div>
+               
+            </div>
+        </article>
+        <article>
+            <h1>Anotomia de um elemento HTML</h1>
+
+            <div class="conteudoHTML">
+                <center><img id="imagemHtml2" src="Imagens/html2.png" alt="imagem"></center>
+                As principais partes de um elemento são:
+
+                <ol>
+                    <li>A tag de abertura: Consiste no nome do elemento (no caso, p), envolvido em parênteses angulares
+                        de
+                        abertura e fechamento. Isso demonstra onde o elemento começa, ou onde seu efeito se inicia —
+                        nesse caso,
+                        onde é o começo do parágrafo.</li>
+                    <li> A tag de fechamento: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma barra
+                        antes do nome
+                        do elemento. Isso demonstra onde o elemento acaba — nesse caso, onde é o fim do parágrafo.
+                        Esquecer de
+                        incluir uma tag de fechamento é um dos erros mais comuns de iniciantes e pode levar a resultados
+                        estranhos.</li>
+                    <li>O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.</li>
+                    <li> O elemento: A tag de abertura, a de fechamento, e o conteúdo formam o elemento.</li>
+                </ol>
+                Elementos também podem ter atributos, que parecem assim:
+
+
+                <center><img id="imagemHtml3" src="Imagens/html3.png" alt="imagem"></center>
+                Atributos contém informação extra sobre o elemento que você não quer que apareça no conteúdo real. Aqui,
+                class é o nome do atributo e editor-note é o valor do atributo. O atributo class permite que você
+                forneça ao elemento um identificador que possa ser usado posteriormente para aplicar ao elemento
+                informações de estilo e outras coisas.
+                Um atributo sempre deve ter:
+                <ol>
+                    <li>Um espaço entre ele e o nome do elemento (ou o atributo anterior, se o elemento já tiver um).
+                    </li>
+                    <li> Um espaço entre ele e o nome do elemento (ou o atributo anterior, se o elemento já tiver um).
+                    </li>
+                    <li>Aspas de abertura e fechamento, envolvendo todo o valor do atributo.</li>
+                </ol>
+            </div>
+        </article>
+        <article>
+            <h1>Aninhando elementos</h1>
+
+            <div class="conteudoHTML">  
+                Você pode colocar elementos dentro de outros elementos também — isso é chamado de aninhamento. Se
+                quiséssemos afirmar que nosso gato é muito mal-humorado, poderíamos envolver a palavra "muito" em um
+                elemento<span> <</span>strong<span>> </span>, o que significa que a palavra deve ser fortemente enfatizada:
+                 <div class="codigo">
+                     <span class="tags"><</span><span class="tags">p</span><span class="tags">></span>Meu gatinho é<span class="tags"><</span><span class="tags">strong</span><span class="tags">>
+                     </span>muito<span class="tags">
+                         <</span><span class="tags">/strong</span><span class="tags">>
+                     </span>mal humorado<span class="tags"><</span><span class="tags">/p</span><span class="tags">></span>
+                 </div>
+                 Você precisa, no entanto, certificar-se de que seus elementos estejam adequadamente aninhados. No
+                 exemplo acima, abrimos primeiro o elemento<span><</span><span>p</span><span>>, depois o elemento <span><</span>strong<span>></span>; portanto, temos que fechar primeiro o elemento<span><</span>strong<span>></span>, depois o elemento o <span><</span><span>p</span><span>>.
+                 <br><br>Os elementos precisam ser abertos e fechados corretamente para que eles estejam claramente visíveis
+                    dentro ou fora um do outro. Se eles se sobrepuserem conforme mostrado acima, seu navegador tentará
+                    adivinhar o que você estava tentando dizer, o que pode levar a resultados inesperados. Então não
+                    faça isso!
+            </div>
+        </article>
+         <article>
+             <h1>Elementos Vazios</h1>
+             
+
+             <div class="conteudoHTML">
+                 Alguns elementos não possuem conteúdo e são chamados de elementos vazios. Considere o elemento <span>
+                     <</span>img> que temos na nossa página HTML:
+                     <div class="codigo">
+                        <span class="tags"><</span><span class="tags">img</span>
+                        <span class="tags2">src=</span> <span class="tags3">"imagens/firefox-icon.png"</span> 
+                        <span class="tags2">alt=</span> <span class="tags3">"Minha imagem de teste"</span><span class="tags">></span>
+                     </div>
+                Ele contém dois atributos, mas não há tag <span><</span><span>/img></span> de fechamento, e não há conteúdo interno. Isso acontece
+                porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo. Sua proposta é incorporar
+                uma imagem na página HTML no lugar que o código aparece.<br>
+                 <a id="next" href="html2.html">Próxima Página</a>
+
+             </div>
+         </article>
+    </div>
+    <footer>
+        <div>
+            <p id="pf">
+                Atendimento ao cliente
+                <br>
+                <strong><span class="material-icons"> email</span> E-mail:</strong> atendimento@error404.com
+                <br>
+                <strong><span class="material-icons">phone</span>Telefone/WhatsApp:</strong> (11) 94807-4260
+                <br>
+                De segunda a domingo <br>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!--FONTE: https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics-->

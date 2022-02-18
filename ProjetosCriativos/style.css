@@ -1,0 +1,222 @@
+/*Custom.css*/
+  body{
+    background-color: #17202A;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+  }
+
+  header{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size:60px;
+    color: #AF7AC5;
+    margin: 50px;    
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+    border: 0;   
+  }
+
+  .links{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #333;
+  }
+
+  .links a{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .links a:hover {
+    background-color: #111;
+  }
+
+  #pf{
+    text-align: center;
+    background-color: #111;
+    border-radius:0px 0px 0px 0px;
+    margin-bottom: 0;
+  }
+
+/*CSS da página de CSS*/
+  /*Formatação de Texto*/
+  .title{
+    background-color:#42234F;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius:20px 20px 20px 20px;
+  }
+  .tex{
+    background-color:#42234F;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius:20px 20px 20px 20px;
+  }
+  .text{
+    background-color:#42234F;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius:0px 0px 20px 20px;
+  }
+  .textTitle{
+    text-align: center;
+    color: #42234F;
+    background: #AF7AC5 ;
+    border-radius:20px 20px 0px 0px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0px;
+  }
+  .note{
+    background-color:rgba(53, 52, 52, 0.856);
+    border: 1px solid black;
+    padding: 5%;
+    margin: 0;
+    border-radius:0px 0px 20px 20px;
+  }
+  .noteTitle{
+    text-align: center;
+    background: #000 ;
+    border-radius:20px 20px 0px 0px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .codigo {
+    background-color: rgba(53, 52, 52, 0.856);
+    padding: 24px;
+    border-left: 6px solid #000;
+    font-weight: 200;
+    word-wrap:break-word;
+    font-size: 1.2rem;
+    margin: 24px 0 24px;
+    max-width: 100%;
+    overflow: auto;
+    width: 90%;
+  }
+  .tags {
+    color: red;
+  }
+  .propriedade {
+    color: #990099;
+  }
+  .value {
+    color: #3366ff;
+  }
+
+  /*CSS das abas*/
+  .tab {
+    border-top: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .tab button:hover {
+    background-color: #111;
+  }
+  .tab button.active {
+    background-color: #444;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    align-content: left
+  }
+
+  /*CSS das grades*/
+  .grid {
+    display: grid;
+    grid-gap: 50px;
+  }
+  .item1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item2{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item3{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .item4{
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .item5{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .ex1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .ex2{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .ex3{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    grid-row: 2;
+  }
+  .ex4{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .ex5{
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .ex6{
+    padding-top: 20px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .ex7{
+    padding-top: 20px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .img1{
+    height: 15%;
+    width: 15%;
+  }
+  ul{
+    margin-bottom: 0;
+    margin-top: 0;
+  }

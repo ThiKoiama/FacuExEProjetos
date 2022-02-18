@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <title>HTML5</title>
+
+</head>
+
+<body>
+
+    <header>ERROR 404</header>
+
+    <nav>
+        <div class="links">
+            <a href="index.html"><span class="material-icons">home</span> Home</a>
+            <a href="html.html"><span class="material-icons">code</span> Html5</a>
+            <a href="css.html"> <span class="material-icons">code </span> Css3</a>
+            <a href="javascript.html"><span class="material-icons">code</span> JavaScript</a>
+        </div>
+    </nav>
+
+    <div id="artigosHtml">
+        <article>
+            <h1>Anatomia de um documento HTML</h1>
+            <div class="conteudoHTML">
+                Isso resume o básico dos elementos HTML individuais, mas eles não são úteis por si só. Agora vamos ver
+                como elementos individuais são combinados para formar uma página HTML inteira.
+                <div class="codigo">
+                    <span><</span><span>!DOCTYPE html>
+                    </span><br>
+                    <span class="tags"><</span><span class="tags">html>
+                    </span><br>
+                    &nbsp&nbsp&nbsp<span class="tags">
+                        <</span><span class="tags">head>
+                    </span><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="tags">
+                        <</span><span class="tags">meta
+                    </span><span class="tags2"> charset=</span><span class="tags3">"UTF-8"</span><span class="tags">></span><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="tags">
+                        <</span><span class="tags">title>
+                    </span> Minha página de teste <span class="tags"><</span><span class="tags">/title>
+                    </span><br>
+                    &nbsp&nbsp&nbsp<span class="tags">
+                        <</span><span class="tags">/head>
+                    </span><br>
+                    &nbsp&nbsp&nbsp<span class="tags">
+                        <</span><span class="tags">body>
+                    </span><br>
+                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="tags">
+                        <</span><span class="tags">img</span> <span class="tags2">src=</span> <span class="tags3">"imagens/firefox-icon.png"</span>
+                    <span class="tags2">alt=</span> <span class="tags3">"minha página de teste"</span><span
+                        class="tags">></span><br>
+                         &nbsp&nbsp&nbsp<span class="tags">
+                            <</span><span class="tags">/body></span></br>
+                            <span class="tags"><</span><span class="tags">/html></span>
+                </div>
+                Aqui nós temos:
+                <ul>
+                    <li>
+                        O doctype - É a parte inicial obrigatória do documento. Nas névoas do tempo,
+                        quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como links para um
+                        conjunto de regras que a página HTML tinha que seguir para ser considerada um bom HTML, o que
+                        poderia significar checagem automática de erros e outras coisas úteis. No entanto, atualmente,
+                        eles não fazem muito sentido e são basicamente necessários apenas para garantir que o documento
+                        se comporte corretamente. Isso é tudo que você precisa saber agora.</li>
+                    <li>
+                        O elemento html - Esse elemento envolve todo o conteúdo da página e às vezes é conhecido como o
+                        elemento raiz.
+                    </li>
+                    <li>
+                         O elemento head - Esse elemento age como um recipiente de tudo o que você deseja incluir em uma página
+                             HTML que não é o conteúdo que você quer mostrar para quem vê sua página. Isso inclui coisas
+                             como palavras-chave e uma descrição que você quer que apareça nos resultados de busca, CSS
+                             para dar estilo ao conteúdo, declarações de conjuntos de caracteres e et
+                    </li>
+                    <li>
+                        <span><</span>meta charset="utf-8"> — esse elemento define o conjunto de caracteres que seu documento deve usar
+                        para o UTF-8, que inclui praticamente todos os caracteres da grande maioria dos idiomas
+                        escritos. Essencialmente, agora ele pode manipular qualquer conteúdo textual que você possa
+                        colocar. Não há razão para não definir isso e assim pode ajudar a evitar alguns problemas no
+                        futuro.
+                    </li>
+                    <li>
+                         O elemento title - Ele define o título da sua página, que é o título que aparece na guia do
+                             navegador onde sua página é carregada. Ele também é usado para descrever a página quando
+                             você a adiciona aos favoritos.
+                    </li>
+                    <li>
+                         O elemento body - Contém todo o conteúdo que você quer mostrar ao público que visita sua página, seja
+                             texto, imagens, vídeos, jogos, faixas de áudio reproduzíveis ou qualquer outra coisa.
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <h1>Imagens</h1>
+
+            <div class="conteudoHTML">
+               Vamos voltar nossa atenção para o elemento <span><</span>img> novamente:
+               <div class="codigo">
+                   <span class="tags">
+                       <</span><span class="tags">img
+                   </span>
+                   <span class="tags2">src=</span> <span class="tags3">"imagens/firefox-icon.png"</span>
+                   <span class="tags2">alt=</span> <span class="tags3">"Minha imagem de teste"</span><span
+                       class="tags">></span>
+               </div>
+               Como dissemos antes, isso incorpora uma imagem na nossa página na posição que aparece. Isso é feito pelo
+               atributo src (source), que contém o caminho para nosso arquivo de imagem.
+
+               Incluímos também um atributo alt (alternative). Neste atributo, você especifica um texto descritivo para
+               usuários que não podem ver a imagem.<br><br>
+               As palavras-chave para o texto alternativo são "texto descritivo". O texto alternativo que você escreve
+               deve fornecer ao leitor informações suficientes para ter uma boa ideia do que a imagem mostra.
+            </div>
+        </article>
+        <article>
+            <h1>Cabeçalhos</h1>
+
+            <div class="conteudoHTML">
+               Os elementos de cabeçalhos permitem especificar que certas partes do seu conteúdo são títulos ou
+               subtítulos. Da mesma forma que um livro tem o título principal e os capítulos possuem títulos e
+               subtítulos, um documento HTML também tem. HTML contém 6 níveis de título, <span><</span>h1> (en-US) - <span><</span>h6> (en-US), embora você normalmente só use de 3 a 4:
+               <div class="codigo">
+                   <span class="tags"><</span><span class="tags">h1></span> Meu título principal <span class="tags"><</span><span class="tags">/h1></span><br>
+                   <span class="tags"><</span><span class="tags">h2></span> Meu título de alto nível <span class="tags"><</span><span class="tags">/h2></span><br>
+                   <span class="tags"><</span><span class="tags">h3></span> Meu subtítulo <span class="tags"><</span><span class="tags">/h3></span><br>
+                   <span class="tags"><</span><span class="tags">h4></span> Meu segundo subtítulo <span class="tags"><</span><span class="tags">/h4></span>
+               </div>
+            </div>
+        </article>
+        <article>
+            <h1>Parágrafo</h1>
+            <div class="conteudoHTML">
+                Como explicado acima, os elementos <span><</span>p> são para conter parágrafos de texto; você os usará com frequência ao marcar um conteúdo de texto regular:
+                <div class="codigo">
+                     <span class="tags"><</span><span class="tags">p></span>Este é um parágrafo simples<span class="tags"><</span><span class="tags">/p></span>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h1>Listas</h1>
+            <div class="conteudoHTML">
+                Muito do conteúdo da web é de listas e o HTML tem elementos especiais para elas. Listas de marcação
+                sempre consistem em pelo menos 2 elementos. Os tipos mais comuns de lista são ordenadas e não ordenadas:
+                <ol>
+                    <li>Listas não ordenadas são para listas onde a ordem dos itens não importa, como uma lista de
+                        compras, por exemplo. Essas são envolvidas em um elemento <span><</span>ul>.</li>
+                    <li>Listas Ordenadas são para listas onde a ordem dos itens importa, como uma receita. Essas são
+                        envolvidas em um elemento <span><</span>ol>.
+                    </li>
+                </ol>
+                Cada item dentro das listas é posto dentro de um elemento <span><</span>li> (item de lista).
+                <div class="codigo">
+                    <span class="tags"><</span><span class="tags">ul></span><br>
+                    &nbsp&nbsp&nbsp<span class="tags"><</span><span class="tags">li></span>técnologos<span class="tags"><</span><span class="tags">/li></span><br>
+                    &nbsp&nbsp&nbsp<span class="tags"><</span><span class="tags">li></span>pensadores<span class="tags"><</span><span class="tags">/li></span><br>
+                    &nbsp&nbsp&nbsp<span class="tags"><</span><span class="tags">li></span>construtores<span class="tags"><</span><span class="tags">/li></span><br>
+                    <span class="tags"><</span><span class="tags">/ul></span><br>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h1>Links</h1>
+            <div class="conteudoHTML">
+               Links são muito importantes — eles são o que faz da web ser de fato uma REDE! Para adicionar um link,
+               precisamos usar um elemento simples — <span><</span>a> — "a" é a forma abreviada de "âncora".<br>
+               Exemplo:
+               <div class="codigo">
+                   <span class="tags">
+                       <</span><span class="tags">a</span> <span class="tags2"> href=</span><span class="tags3">"https://youtube.com.br"</span><span class="tags">></span> Youtube <span class="tags"><</span><span class="tags">/a></span>
+               </div>
+               Você pode obter resultados inesperados se omitir a parte https:// ou o http://, o chamado protocolo, no
+               começo do endereço web. Então depois de criar um link, clique nele para ter certeza de que ele está indo
+               para onde você deseja.<br>
+                <a id="anterior" href="html.html">Página Anterior</a>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div>
+            <p id="pf">
+                Atendimento ao cliente
+                <br>
+                <strong><span class="material-icons"> email</span> E-mail:</strong> atendimento@error404.com
+                <br>
+                <strong><span class="material-icons">phone</span>Telefone/WhatsApp:</strong> (11) 94807-4260
+                <br>
+                De segunda a domingo <br>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!--FONTE: https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics-->
