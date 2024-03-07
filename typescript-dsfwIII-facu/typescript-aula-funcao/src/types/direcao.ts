@@ -1,0 +1,1 @@
+export type direcao = "cima" | "baixo" | "direita" | "esquerda";
