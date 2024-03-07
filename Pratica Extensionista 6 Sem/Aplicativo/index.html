@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritmo Genético - Rota entre Cidades</title>
+    <link rel="stylesheet" href="css/syles.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./img/icon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Algoritmo Genético - Rota entre Cidades</h1>
+      <h4>
+        Nesse projeto, utilizando algoritmo genético, podemos visualizar qual
+        seria a melhor ordem de cidades que uma empresa de logística localizada
+        em Jundiaí poderia percorrer para fazer as suas entregas nas cidades em
+        que ela atende.
+      </h4>
+    </header>
+
+    <div id="app">
+      <div id="form">
+        <label for="geracoes">Número de Gerações:</label>
+        <input type="number" id="geracoes" value="100" />
+
+        <label for="taxaMutacao">Taxa de Mutação (0-1):</label>
+        <input type="number" id="taxaMutacao" step="0.01" value="0.1" />
+
+        <div class="checkbox-container">
+          <label for="prioridadeJundiai"
+            >Prioridade de entrega em Jundiaí:</label
+          >
+          <input type="checkbox" id="prioridadeJundiai" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeItupeva"
+            >Prioridade de entrega em Itupeva:</label
+          >
+          <input type="checkbox" id="prioridadeItupeva" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeVarzea"
+            >Prioridade de entrega em Várzea Paulista:</label
+          ><input type="checkbox" id="prioridadeVarzea" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeCabreuva"
+            >Prioridade de entrega em Cabreúva:</label
+          ><input type="checkbox" id="prioridadeCabreuva" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeCampoLimpo"
+            >Prioridade de entrega em Campo Limpo Paulista:</label
+          >
+          <input type="checkbox" id="prioridadeCampoLimpo" />
+        </div>
+
+        <div class="checkbox-container">
+          <label for="prioridadeJarinu">Prioridade de entrega em Jarinu:</label>
+          <input type="checkbox" id="prioridadeJarinu" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeCampinas"
+            >Prioridade de entrega em Campinas:</label
+          >
+          <input type="checkbox" id="prioridadeCampinas" />
+        </div>
+        <div class="checkbox-container">
+          <label for="prioridadeSP">Prioridade de entrega em São Paulo:</label>
+          <input type="checkbox" id="prioridadeSP" />
+        </div>
+
+        <button onclick="iniciarAlgoritmoGenetico()">
+          Executar Algoritmo Genético
+        </button>
+      </div>
+      <div id="resultado"><img id="img" src="img/carro.png" alt="" /></div>
+
+      <script type="text/javascript" src="algoritmoGenetico.js"></script>
+    </div>
+  </body>
+</html>

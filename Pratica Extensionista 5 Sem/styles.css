@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(89, 123, 189, 1) 100%
+  );
+}
+
+#header h1,
+#header h2 {
+  color: #fff;
+}
+
+#header1,
+#header2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header1 h1 {
+  font-size: 3.5rem;
+}
+
+#header2 img {
+  width: 70%;
+}
+
+#dicas {
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.paragrafoDicas {
+  margin-top: 50px;
+}
+
+#footer {
+  height: 180px;
+  background-color: #292828;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  color: #fff;
+}
+
+#localvacina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  background-color: #292828;
+}
+
+#localvacina h2 {
+  font-size: 2rem;
+}
+
+#videos {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  min-height: 100vh;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+#videosflex {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 80%;
+  height: 800px;
+  margin-top: 20px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+}
+.gmap_iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
