@@ -3,20 +3,24 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-:root{
+:root {
     --primary-color: #417ec0;
-    --error-primary: #ac2828;
+    --error-color: #ac2828;
     --gray-color: #747474;
 }
 
 .c-primary {
-    color:var(--primary-color)
+    color: var(--primary-color);
 }
 
 .c-error {
-    color: var(--error-primary)
+    color: var(--error-color);
 }
 
 .c-gray {
-    color: var(--gray-color)
+    color: var(--gray-color);
+}
+
+.hover:hover {
+    cursor: pointer;
 }

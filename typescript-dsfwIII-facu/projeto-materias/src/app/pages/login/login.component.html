@@ -1,0 +1,34 @@
+<div class="area-login-background d-none d-md-block"></div>
+
+<div class="area-form">
+    <form>
+        <h1 class="titulo">CRUD MATÉRIAS</h1>
+        <h2 class="subtitulo">Melhor site de controle de notas</h2>
+
+
+        <!--
+            [(ngModel)]="userName": Esta é a diretiva ngModel do Angular. 
+            Ela cria uma ligação bidirecional entre a propriedade userName do componente 
+            e o valor do elemento de entrada. 
+            
+            Isso significa que quando o usuário digita algo no campo de entrada, 
+            a propriedade userName é atualizada automaticamente. 
+            
+            Da mesma forma, se a propriedade userName for alterada programaticamente, 
+            o valor do campo de entrada será atualizado para refletir a nova propriedade.
+            
+            
+            [ngModelOptions]="{standalone: true}": Esta é a diretiva ngModelOptions 
+            do Angular. Ela permite que você configure opções adicionais para a 
+            diretiva ngModel. Neste caso, {standalone: true} está dizendo ao Angular para 
+            não registrar este controle de entrada com um formulário pai. 
+            
+            Isso é útil se você quiser ter um controle de entrada que não faz parte de 
+            um formulário, mas ainda quer usar ngModel para a ligação de dados. -->
+        <input [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="input-form" type="text" placeholder="Digite seu nome">
+
+        <app-button textButton="Acessar" size="100" (click)="login()"></app-button>
+    </form>
+
+    <p class="footer">© 2024 | Desenvolvido por Fernando Domeneghetti</p>
+</div>

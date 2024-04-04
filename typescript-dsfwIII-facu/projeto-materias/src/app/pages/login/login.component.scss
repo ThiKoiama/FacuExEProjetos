@@ -1,0 +1,66 @@
+.area-login-background {
+    height: 100%;
+    width: 55%;
+    display: block;
+    float: left;
+    background-image: url('../../../assets/background-login.jpeg');
+    background-color: var(--primary-color);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat-y
+}
+
+.area-form {
+    height: 100%;
+    width:45%;
+    float: left;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; // Add this line
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .area-form { width: 100%; }
+}
+
+.titulo {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 7px;
+    color: var(--primary-color);
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray-color);
+    margin: 0px 0px 30px 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.input-form {
+    outline: none;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #00000000; // 6x 0 é a cor, porém quando se usa 8x 0 é para deixar transparente
+    margin-bottom: 32px;
+    transform: 0.3s linear all;
+    box-shadow: inset 1px 1px 2px #babecc80, inset -1px -1px 2px #d8d8d8b0; // inset serve para sombra interna
+    &:focus {
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 4px;
+    color: var(--primary-color);
+    font-size: 10px;
+}
