@@ -1,0 +1,121 @@
+.card-info{
+    background: #fafafa;
+    padding: 14px 18px 0 18px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px 1px #0a0a0a20;
+}
+
+.titulo {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0px !important;
+    color: var(--primary-color);
+}
+
+.subtitulo{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 26px 0px 14px 0px;
+    margin: 0px;
+    color: var(--gray-color);
+
+    span{
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+}
+
+//card spinner
+
+.texto-card {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 18px;
+}
+
+.numero-card{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.destaque-card{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0px;
+
+}
+
+.info-spinner{
+    color: #797979;
+    position: relative;
+    text-align: center;
+    top: -62px;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+
+//LADO DIREITO
+
+ul li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #868686;
+    padding: 14px 0px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+
+    mat-icon{
+        margin-right: 14px;
+        font-size: 22px;
+    }
+}
+
+
+.img-perfil{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container-perfil{
+    width: 100%;
+    text-align: center;
+
+    h4{
+        font-size: 16px;
+        color: #474747;
+        font-weight: 500;
+        margin: 8px 0px 0px 0px;
+    }
+
+    h5{
+        font-size: 14px;
+        color: #6d6d6d;
+        font-weight: 400;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .location{
+        text-decoration: none;
+        justify-content: center;
+        color: var(--primary-color);
+    }
+}
+
+.texto-p{
+    font-size: 14px;
+    font-style: italic;
+    color:#767676;
+}
+
+.right-side{
+    height: 95vh !important;
+}
