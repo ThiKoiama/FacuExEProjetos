@@ -1,4 +1,4 @@
-.sidemenu{
+.sidemenu {
     width: 250px;
     height: 100vh;
     min-height: 100vh;
@@ -9,17 +9,15 @@
     box-shadow: 4px 0px 10px 4px #0a0a0a30;
     margin-right: 16px;
 
-    ul{
-        padding: 0;
-    }
+    ul { padding: 0;}
 
-    .logo{
+    .logo {
         font-size: 20px;
         font-weight: bold;
         margin-left: 4px;
     }
 
-    li{
+    li {
         font-size: 18px;
         font-weight: 500;
         color: #fafafa;
@@ -28,25 +26,20 @@
         align-items: center;
         justify-content: left;
         transition: 0.3s linear all;
-        mat-icon{
-            margin-right:14px;
-            font-size: 18px;
-        }
-        &:hover{
+        
+        mat-icon { margin-right: 14px; font-size: 22px; }
+        &:hover {
             background: #e6e6e6;
             cursor: pointer;
-            color: var(--primary-color)
+            color: var(--primary-color);
         }
     }
 
-    .logout{  
+    .logout {
         position: absolute;
         bottom: 0;
         width: 250px;
     }
 
-    a{
-        text-decoration: none;
-    }
-   
+    a { text-decoration: none; }
 }

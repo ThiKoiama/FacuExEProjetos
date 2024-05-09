@@ -1,6 +1,6 @@
-.card-info{
+.card-info {
     background: #fafafa;
-    padding: 14px 18px 0 18px;
+    padding: 14px 18px 0px 18px;   
     border-radius: 6px;
     box-shadow: 0px 0px 3px 1px #0a0a0a20;
 }
@@ -9,25 +9,21 @@
     font-size: 26px;
     font-weight: 500;
     padding: 0;
-    margin: 0px !important;
+    margin: 0 !important;
     color: var(--primary-color);
 }
 
-.subtitulo{
+.subtitulo {
     font-size: 16px;
     font-weight: 300;
+    margin: 0;
     padding: 26px 0px 14px 0px;
-    margin: 0px;
     color: var(--gray-color);
-
-    span{
-        color: var(--primary-color);
-        font-weight: 500;
-    }
+    
+    span { color: var(--primary-color); font-weight: 500; }
 }
 
-//card spinner
-
+// card spiner
 .texto-card {
     font-size: 16px;
     font-weight: 500;
@@ -35,34 +31,33 @@
     margin-bottom: 18px;
 }
 
-.numero-card{
+.numero-card {
     font-size: 28px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #0a0a0a;
     margin-bottom: 16px;
 }
 
-.destaque-card{
+.destaque-card {
     font-size: 12px;
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 0px;
-
 }
 
-.info-spinner{
-    color: #797979;
-    position: relative;
-    text-align: center;
-    top: -62px;
+.info-spinner {
     font-size: 14px;
     font-weight: 500;
-
-
+    color: #797979;
+    text-align: center;
+    position: relative;
+    top: -62px;
+    margin: 0px 0px 0px -70px;
 }
 
-//LADO DIREITO
+// mudar a cor do spinner esta no style global!
 
+// LADO DIREITO
 ul li {
     font-size: 14px;
     font-weight: 500;
@@ -73,49 +68,47 @@ ul li {
     align-items: center;
     border-bottom: 1px solid #dbdbdb;
 
-    mat-icon{
-        margin-right: 14px;
-        font-size: 22px;
-    }
+    mat-icon { margin-right: 14px; font-size: 22px ;}
 }
 
-
-.img-perfil{
+.img-perfil {
     width: 40%;
     border-radius: 50%;
 }
 
-.container-perfil{
+.container-perfil {
     width: 100%;
     text-align: center;
+    
 
-    h4{
+    h4 {
         font-size: 16px;
         color: #474747;
         font-weight: 500;
         margin: 8px 0px 0px 0px;
     }
 
-    h5{
+    h5 {
         font-size: 14px;
         color: #6d6d6d;
         font-weight: 400;
         margin: 2px 0px 0px 0px;
     }
 
-    .location{
+    .location {
         text-decoration: none;
         justify-content: center;
         color: var(--primary-color);
+        border: none;
     }
 }
 
 .texto-p{
     font-size: 14px;
     font-style: italic;
-    color:#767676;
+    color: #767676;
 }
 
-.right-side{
+.right-side {
     height: 95vh !important;
 }

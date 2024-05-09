@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {ThemePalette} from '@angular/material/core';
-import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+import { ThemePalette } from '@angular/material/core';
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-home',
@@ -10,11 +10,11 @@ import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 export class HomeComponent {
   color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
-  value:number = 79
+  value: number = 75;
   noteValue: number = 80;
   userName: string | null;
 
-  ngOnInit(){
+  ngOnInit() {
     this.userName = sessionStorage.getItem('user');
   }
 }

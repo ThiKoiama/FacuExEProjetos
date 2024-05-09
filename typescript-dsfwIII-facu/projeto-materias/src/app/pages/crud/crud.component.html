@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+
+<div class="container-fluid pt-3">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="titulo">Cadastro de matérias</h1>
+            <h2 class="subtitulo">Gerencie as matérias, adicionando, editando ou excluindo</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <app-button class="float-end mt-2" textButton="+ Cadastrar"></app-button>
+
+            <mat-form-field>
+                <mat-label>Busca por Matérias</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Faça sua pesquisa" #input>
+            </mat-form-field>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "step-by-step",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

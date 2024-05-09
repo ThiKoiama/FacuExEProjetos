@@ -6,6 +6,7 @@
     <div class="row">
         <!-- LADO ESQUERDO DA TELA -->
         <div class="col-12 col-lg-9">
+
             <div class="card-info">
                 <div class="row">
                     <div class="col-12 col col-md-8">
@@ -15,16 +16,18 @@
                             Agora com o <span>Crud Matérias</span> você pode controlar tudo isso de forma simples e eficiente.
                             Confira um resumo das informações através do nosso <span>Dashboard</span>
                         </h3>
-                        <app-button textButton="Iniciar" routerLink="/materias"></app-button>
+                        <app-button textButton="Iniciar" routerLink="/crud"></app-button>
                     </div>
                     <div class="col-12 col-md-4">
                         <img src="../../../assets/dashboard-2.png" width="70%">
+                    </div>
                 </div>
             </div>
 
+            <!-- parte de baixo da tela -->
             <div class="row mt-4">
 
-                <!-- card esquerda-->
+                <!-- card spinner esquerda-->
                 <div class="col-6">
                     <div class="card-info">
                         <div class="row">
@@ -47,7 +50,7 @@
                     </div>
                 </div>     
                 
-                <!-- card direita-->
+                <!-- card spinner direita-->
                 <div class="col-6">
                     <div class="card-info">
                         <div class="row">
@@ -67,57 +70,54 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>  
                 
-                
+                <!-- daqui para baixo-->
+                <!-- matérias cadastradas -->
                 <div class="col-12 mt-4">
                     <div class="card-info">
-                        <h3>Ultima Matéria Cadastrada</h3>
+                        <h3 class="titulo">Ultima Matéria cadastrada</h3>
 
                         <hr class="hr">
-                        
+
                         <div class="row">
-                            <div class="col-1"> <mat-icon>history_edu</mat-icon></div>
+                            <div class="col-1"><mat-icon>history_edu</mat-icon></div>
                             <div class="col-1"><p class="texto-p">1</p></div>
-                            <div class="col"> <div class="texto-p">Desenvolvimento de Framework III</div></div>
-                            <div class="col"><div class="texto-p"> 9</div></div>
+                            <div class="col"><p class="texto-p">Desenvolvimento de Framework III</p></div>
+                            <div class="col"><p class="texto-p">9</p></div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </div>
-    </div>
+    
+        <!-- LADO DIREITO DA TELA -->
+        <div class="col-12 col-lg-3">
+            <div class="card-info right-side">
+                <div class="container-perfil">
+                    <img src="../../../assets/perfil.jpg" class="img-perfil">
+                    <h4>Seja bem vindo</h4>
+                    <h5>{{ userName }}</h5>
+                    <h5 class="location"><mat-icon>location_on</mat-icon> SP - Brasil </h5>
+                </div>
 
-    <!-- LADO DIRIETO PROFILE-->
-    <div class="col-12 col-lg-3">
-        <div class="card-info right-side">
-            <div class="container-perfil">
-                <img src="../../../assets/perfil.png" class="img-perfil">
-                <h4>Seja Bem Vindo</h4>
-                <h5>{{userName}}</h5>
-                <h5 class="location"><mat-icon>location_on</mat-icon>SP - Jundiaí</h5>
+                <hr class="hr">
+
+                <p class="texto-p">"Não faz sentido olhar para trás e pensar: devia ter feito isso ou aquilo, devia ter estado lá.
+                    Isso não importa. Vamos inventar o amanhã e parar de nos preocupar com o passado.<br>
+                    Steve Jobs<br> 
+                    Nota: 2007, discurso no regresso à Apple"
+                </p>
+                <hr class="hr">
+
+                <ul>
+                    <li><mat-icon>school</mat-icon>Gerencie Matérias</li>
+                    <li><mat-icon>scoreboard</mat-icon>Adicione Notas</li>
+                    <li><mat-icon>format_list_bulleted</mat-icon>Consulte Cadastros</li>
+                    <li><mat-icon>delete</mat-icon>Exclua Matérias</li>
+                </ul>
             </div>
-            <hr class="hr">
-            
-            <p class="texto-p">
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Ipsum piciatis minus iste iusto,
-                 nam est laudantium aperiam <br>
-                 
-                 Conse Quuntur <br>
-                 Dignissimos voluptates veniam et hic"
-                 
-
-            </p>
-
-            <hr class="hr">
-            <ul>
-                <li><mat-icon>school</mat-icon>Gerencie Matérias</li>
-                <li><mat-icon>scoreboard</mat-icon>Adicione Notas</li>
-                <li><mat-icon>format_list_bulleted</mat-icon>Consulte Cadastro</li>
-                <li><mat-icon>delete</mat-icon>Excluir Matérias</li>
-                
-            </ul>
-        </div>
+        </div> 
+        
     </div>
 </div>
