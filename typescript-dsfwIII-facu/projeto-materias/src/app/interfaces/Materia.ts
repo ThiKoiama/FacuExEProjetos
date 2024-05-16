@@ -1,6 +1,6 @@
 export interface Materia {
     firebaseId?: string,
-    name: string,
+    nome: string,
     semestre: number,
     curso: string,
     professor: string,
