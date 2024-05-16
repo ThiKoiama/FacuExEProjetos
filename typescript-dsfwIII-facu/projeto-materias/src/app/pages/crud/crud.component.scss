@@ -13,3 +13,38 @@
     padding: 2px 0px 14px 0px;
     color: var(--gray-color);
 }
+
+// tabela
+.no-data {
+    padding: 8px 14px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+tr { height: 40px; }
+
+.th-table {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a5a5a;
+}
+
+.td-table {
+    font-size: 12px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.icone-tabela {
+    color: #767676;
+    margin-right: 10px;
+    transform: rotate(0deg);
+    transition: 0.3s linear all;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--primary-color);
+        transform: rotate(359deg);
+    }
+}

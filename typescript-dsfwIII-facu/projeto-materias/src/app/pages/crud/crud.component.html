@@ -16,6 +16,66 @@
                 <mat-label>Busca por Matérias</mat-label>
                 <input matInput (keyup)="applyFilter($event)" placeholder="Faça sua pesquisa" #input>
             </mat-form-field>
+
+            <table class="mat-elevation-z8" mat-table [dataSource]="dataSource" matSort>
+
+                <ng-container matColumnDef="id">
+                  <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
+                  <td class="td-table" mat-cell *matCellDef="let materia"> {{materia.firebaseId}} </td>
+                </ng-container>
+            
+                <ng-container matColumnDef="name">
+                  <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header> Matéria </th>
+                  <td class="td-table" mat-cell *matCellDef="let materia"> {{materia.name}}</td>
+                </ng-container>
+            
+                <ng-container matColumnDef="semestre">
+                  <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header> Semetre </th>
+                  <td class="td-table" mat-cell *matCellDef="let materia"> {{materia.semestre}} </td>
+                </ng-container>
+            
+                <ng-container matColumnDef="professor">
+                    <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header> Professor </th>
+                    <td class="td-table" mat-cell *matCellDef="let materia"> {{materia.professor}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="nota">
+                    <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header> Concluiu? </th>
+                    <td class="td-table" mat-cell *matCellDef="let materia"> 
+
+                        <!-- <mat-icon class="c-primary" *ngIf="materia.nota > 0">check</mat-icon>
+                        <mat-icon class="c-error" *ngIf="materia.nota == 0">remove</mat-icon>  -->
+
+
+                        @if (materia.nota !== null) {
+                            <mat-icon class="c-primary">check</mat-icon>
+                        } 
+                        
+                        @if (materia.nota === null) {
+                            <mat-icon class="c-error">remove</mat-icon>
+                        }
+
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="actions">
+                    <th class="th-table" mat-header-cell *matHeaderCellDef mat-sort-header></th>
+                    <td class="td-table" mat-cell *matCellDef="let materia">
+                        <mat-icon class="icone-tabela" (click)="openModalViewMateria(materia)">visibility</mat-icon>
+                        <mat-icon class="icone-tabela">edit</mat-icon>
+                        <mat-icon class="icone-tabela">delete</mat-icon>
+                    </td>
+                </ng-container>
+            
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            
+                <tr class="mat-row" *matNoDataRow>
+                  <td class="mat-cell no-data" colspan="4">Não foram encontrados dados de acordo com a pesquisa: "{{input.value}}"</td>
+                </tr>
+              </table>
+            
+              <mat-paginator class="shadow-sm" [pageSizeOptions]="[3, 5, 7]" aria-label="Selecione matérias por página"></mat-paginator>
         </div>
     </div>
 </div>

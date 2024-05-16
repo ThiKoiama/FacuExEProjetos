@@ -20,8 +20,16 @@ import { environment } from '../environments/environment.development';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+
+
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule} from '@angular/material/sort';
+import { MatTableModule} from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+
 // Angular
 import { AngularFireModule } from '@angular/fire/compat';
+import { ModalViewMateriaComponent } from './pages/crud/modal-view-materia/modal-view-materia.component';
 
 
 @NgModule({
@@ -31,7 +39,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     LoginComponent,
     HomeComponent,
     MenuComponent,
-    CrudComponent
+    CrudComponent,
+    ModalViewMateriaComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,11 @@ import { AngularFireModule } from '@angular/fire/compat';
 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule,
+    MatTableModule, 
+    MatSortModule,
+    MatDialogModule
   ],
   providers: [
     provideAnimationsAsync()

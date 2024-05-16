@@ -1,0 +1,30 @@
+<div class="container-fluid p-3">
+    <mat-icon class="float-end hover" (click)="closeModal()">close</mat-icon>
+
+    <h1 class="titulo">Detalhes da matéria</h1>
+    <h2 class="subtitulo">Tenha uma visão mais detalhada desta matéria</h2>
+
+    <div class="row mt-3">
+        <div class="col-6">
+            <h4 class="titulo-informacao">Matéria</h4>
+            <p class="informacao">{{materiaData.name}}</p>
+        </div>
+        <div class="col-6">
+            <h4 class="titulo-informacao">Curso</h4>
+            <p class="informacao">{{materiaData.curso}}</p>
+        </div>
+        <div class="col-6">
+            <h4 class="titulo-informacao">Semetre</h4>
+            <p class="informacao">{{materiaData.semestre}}</p>
+        </div>
+        <div class="col-6">
+            <h4 class="titulo-informacao">Professor</h4>
+            <p class="informacao">{{materiaData.professor}}</p>
+        </div>
+        <div class="col-6">
+            <h4 class="titulo-informacao">Nota</h4>
+            <p class="informacao" *ngIf="materiaData.nota">{{materiaData.nota}}</p>
+            <p class="informacao" *ngIf="!materiaData.nota">-</p>
+        </div>
+    </div>
+</div>
